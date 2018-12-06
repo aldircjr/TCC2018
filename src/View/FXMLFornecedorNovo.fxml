@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="512.0" style="-fx-border-style: solid;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLFornecedorNovoController">
+   <children>
+      <Label layoutX="91.0" layoutY="38.0" text="CNPJ:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/empresa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_cnpj" layoutX="151.0" layoutY="38.0" onKeyReleased="#textfield_cnpj" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="25.0" layoutY="66.0" text="Inscrição Estadual:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/ie.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_inscricao_estadual" layoutX="151.0" layoutY="66.0" onKeyReleased="#textfield_inscricao_estadual" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="53.0" layoutY="94.0" text="Razão Social:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/nome.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_razao_social" layoutX="151.0" layoutY="94.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="39.0" layoutY="122.0" text="Nome Fantasia:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/nomeFantasia.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_nome_fantasia" layoutX="151.0" layoutY="122.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="56.0" layoutY="150.0" text="Logradouro:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/marcadorMapa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_logradouro" layoutX="151.0" layoutY="150.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="87.0" layoutY="178.0" text="Bairro:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/endereco.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_bairro" layoutX="151.0" layoutY="178.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="81.0" layoutY="206.0" text="Cidade:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/cidade.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_cidade" layoutX="151.0" layoutY="206.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="104.0" layoutY="234.0" text="UF:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/uf.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <ComboBox fx:id="combobox_uf" layoutX="151.0" layoutY="234.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="98.0" layoutY="262.0" text="CEP:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/cep.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_cep" layoutX="151.0" layoutY="262.0" onKeyReleased="#textfield_telefone" prefHeight="25.0" prefWidth="133.0" />
+      <Label layoutX="291.0" layoutY="262.0" text="Prazo:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/prazo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_prazoDeEntrega" layoutX="353.0" layoutY="262.0" prefHeight="25.0" prefWidth="98.0" />
+      <Label layoutX="72.0" layoutY="290.0" text="Telefone:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/telefone.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_telefone" layoutX="151.0" layoutY="290.0" onKeyReleased="#textfield_telefone" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="90.0" layoutY="318.0" text="Email:">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/email.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="textfield_email" layoutX="151.0" layoutY="318.0" prefHeight="25.0" prefWidth="300.0" />
+      <Button fx:id="button_salvar" layoutX="259.0" layoutY="359.0" mnemonicParsing="false" onAction="#button_salvar" prefHeight="33.0" prefWidth="95.0" text="Salvar">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/confirmar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="button_cancelar" layoutX="356.0" layoutY="359.0" mnemonicParsing="false" onAction="#button_cancelar" prefHeight="33.0" prefWidth="95.0" text="Cancelar">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/cancelar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

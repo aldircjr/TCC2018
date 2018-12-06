@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="203.0" prefWidth="449.0" style="-fx-border-style: solid;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLInicioController">
+   <children>
+      <Button fx:id="buttonProduto" contentDisplay="TOP" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonProduto" prefHeight="86.0" prefWidth="104.0" text="Produto">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/produto.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonUsuario" contentDisplay="TOP" layoutX="119.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonUsuario" prefHeight="86.0" prefWidth="104.0" text="Usuário">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/usuario.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonEstatistica" contentDisplay="TOP" layoutX="224.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonEstatistica" prefHeight="86.0" prefWidth="104.0" text="Estatistica">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/grafico.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonSair" contentDisplay="TOP" layoutX="329.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonSair" prefHeight="86.0" prefWidth="104.0" text="Sair">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/cancelar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonFornecedor" contentDisplay="TOP" layoutX="14.0" layoutY="101.0" mnemonicParsing="false" onAction="#buttonFornecedor" prefHeight="86.0" prefWidth="104.0" text="Fornecedor">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/fornecedor.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonConfiguracao" contentDisplay="TOP" layoutX="119.0" layoutY="101.0" mnemonicParsing="false" onAction="#buttonConfiguracao" prefHeight="86.0" prefWidth="104.0" text="Configuração">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/configuracao.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonEmail" contentDisplay="TOP" layoutX="224.0" layoutY="101.0" mnemonicParsing="false" onAction="#buttonEmail" prefHeight="86.0" prefWidth="104.0" text="Pedido">
+         <graphic>
+            <ImageView fx:id="image_pedido" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/pedido.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonBloquear" contentDisplay="TOP" layoutX="329.0" layoutY="101.0" mnemonicParsing="false" onAction="#buttonBloquear" prefHeight="86.0" prefWidth="104.0" text="Bloquear">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/cadeado.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
