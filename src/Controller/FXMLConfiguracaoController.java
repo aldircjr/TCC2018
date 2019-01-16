@@ -51,6 +51,7 @@ public class FXMLConfiguracaoController implements Initializable {
     @FXML private TextField textfield_ip_servidor;
     @FXML private TextField textfield_porta_servidor;
     @FXML private ComboBox<String> combobox_uf;
+    @FXML private TextField textfield_margemDeSeguranca;
     private Model.ConfiguracaoServidor config;
     private Configuracao configuracaoEmpresaEmail;
     
@@ -80,6 +81,7 @@ public class FXMLConfiguracaoController implements Initializable {
         confiEmpresaEmail.setPorta(textfield_porta.getText());
         confiEmpresaEmail.setEmail(textfield_email.getText());
         confiEmpresaEmail.setSenha(textfield_senha.getText());
+        confiEmpresaEmail.setMargemSegurancaEntrega(Float.parseFloat(textfield_margemDeSeguranca.getText()));
         
         if(configResource.countREST().equals("1")){
             confiEmpresaEmail.setID(1);
@@ -163,6 +165,7 @@ public class FXMLConfiguracaoController implements Initializable {
         textfield_porta.setText(this.configuracaoEmpresaEmail.getPorta());
         textfield_email.setText(this.configuracaoEmpresaEmail.getEmail());
         textfield_senha.setText(this.configuracaoEmpresaEmail.getSenha());
+        textfield_margemDeSeguranca.setText(""+this.configuracaoEmpresaEmail.getMargemSegurancaEntrega());
     }
     
     public void fechaStage(){

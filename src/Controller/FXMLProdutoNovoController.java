@@ -39,6 +39,7 @@ public class FXMLProdutoNovoController implements Initializable {
     @FXML private Button button_cancelar;
     @FXML private Button button_salvar;
     @FXML private ComboBox<String> combobox_fornecedor;
+    @FXML private TextField textfield_diasParaMedia;
     private List<Fornecedor> listaFornecedor;
     private Fornecedor fornecedor;
 
@@ -54,7 +55,7 @@ public class FXMLProdutoNovoController implements Initializable {
     void button_salvar(ActionEvent event) throws IOException, Exception {
         buscaFornecedorByName();
        
-        Produto produto = new Produto(textfield_codigo_de_barras.getText(), textfield_nome.getText(), combobox_unidade.getValue(), Integer.parseInt(textfield_dias_estoque.getText()), this.fornecedor);
+        Produto produto = new Produto(textfield_codigo_de_barras.getText(), textfield_nome.getText(), combobox_unidade.getValue(), Integer.parseInt(textfield_dias_estoque.getText()), this.fornecedor, Integer.parseInt(textfield_diasParaMedia.getText()));
         ProdutoResource produtoResource = new ProdutoResource();
         
         
@@ -64,6 +65,7 @@ public class FXMLProdutoNovoController implements Initializable {
             produto.setCurvaABC(Static.ProdutoEdit.ProdutoStatic.getProduto().getCurvaABC());
             produto.setSaldo(Static.ProdutoEdit.ProdutoStatic.getProduto().getSaldo());
             produto.setMediaConsumo(Static.ProdutoEdit.ProdutoStatic.getProduto().getMediaConsumo());
+//            produto.setDiasParaCalcularEstoque(Static.ProdutoEdit.ProdutoStatic.getProduto().getDiasParaCalcularEstoque());
             
             produtoResource.edit(new Gson().toJson(produto));
             Static.ProdutoEdit.ProdutoStatic.setNull();
@@ -119,6 +121,7 @@ public class FXMLProdutoNovoController implements Initializable {
             combobox_unidade.setValue(Static.ProdutoEdit.ProdutoStatic.getProduto().getUnidade());
             textfield_dias_estoque.setText(""+Static.ProdutoEdit.ProdutoStatic.getProduto().getDiasEstoqueDesejavel());
             combobox_fornecedor.setValue(Static.ProdutoEdit.ProdutoStatic.getProduto().getFornecedor().getNome());
+            textfield_diasParaMedia.setText(""+Static.ProdutoEdit.ProdutoStatic.getProduto().getDiasParaCalcularEstoque());
         }
     }
     

@@ -28,13 +28,15 @@ public class Produto {
     private float porcMovimentacao;
     private Date dataCadastro;
     private float mediaConsumo;
+    private int diasParaCalcularEstoque;
 
-    public Produto(String ean, String nome, String unidade, int diasEstoqueDesejavel, Fornecedor fornecedor) {
+    public Produto(String ean, String nome, String unidade, int diasEstoqueDesejavel, Fornecedor fornecedor, int diasParaCalcular) {
         this.ean = ean;
         this.nome = nome;
         this.unidade = unidade;
         this.diasEstoqueDesejavel = diasEstoqueDesejavel;
         this.fornecedor = fornecedor;
+        this.diasParaCalcularEstoque = diasParaCalcular;
     }
 
     public float getValorMovimentado() {
@@ -55,6 +57,14 @@ public class Produto {
 
     public void setMediaConsumo(float mediaConsumo) {
         this.mediaConsumo = mediaConsumo;
+    }
+
+    public int getDiasParaCalcularEstoque() {
+        return diasParaCalcularEstoque;
+    }
+
+    public void setDiasParaCalcularEstoque(int diasParaCalcularEstoque) {
+        this.diasParaCalcularEstoque = diasParaCalcularEstoque;
     }
 
     

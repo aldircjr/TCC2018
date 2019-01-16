@@ -24,11 +24,22 @@ public class Configuracao {
     private String porta;
     private String email;
     private String senha;
+    private float margemSegurancaEntrega;
 
 
     public Integer getID() {
         return ID;
     }
+
+    public float getMargemSegurancaEntrega() {
+        return margemSegurancaEntrega;
+    }
+
+    public void setMargemSegurancaEntrega(float margemSegurancaEntrega) {
+        this.margemSegurancaEntrega = margemSegurancaEntrega;
+    }
+    
+    
 
     public void setID(Integer ID) {
         this.ID = ID;

@@ -10,6 +10,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="462.0" style="-fx-border-style: solid;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLConfiguracaoController">
    <children>
@@ -203,6 +204,17 @@
                            </graphic>
                         </Label>
                         <TextField fx:id="textfield_porta_servidor" layoutX="148.0" layoutY="62.0" prefHeight="25.0" prefWidth="239.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Outros">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="540.0">
+                     <children>
+                        <Label layoutX="25.0" layoutY="39.0" text="Margem de Segurança:" />
+                        <TextField fx:id="textfield_margemDeSeguranca" layoutX="148.0" layoutY="35.0" prefHeight="25.0" prefWidth="239.0" />
+                        <Text layoutX="148.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Esta margem de segurança é utilizada para compor o estoque de segurança." wrappingWidth="233.142578125" />
                      </children>
                   </AnchorPane>
                </content>
